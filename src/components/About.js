@@ -14,7 +14,7 @@ const About = () => {
           Hello! My name is Daniel. I am a prospective software engineer.
         </p>
         <p className="personal-text-content">
-          I am a graduate of Dartmouth College where I received a BA in Cognitive Science with a focus in Intelligence. I am interested in all things related to cognition and am fascinated by how new technologies are seemingly able to replicate intelligent and intentioned behavior!
+          I am a software engineer based in Arroyo Grande, California, and a graduate of Dartmouth College where I received a BA in Cognitive Science with a focus in Intelligence. I am interested in all things related to cognition and am fascinated by how new technologies are seemingly able to replicate intelligent and intentioned behavior!
         </p>
         <p className="personal-text-content">
           Within the field of computer science, I am most passionate about machine learning and artificial intelligence.
