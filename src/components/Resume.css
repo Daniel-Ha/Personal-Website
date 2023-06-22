@@ -6,7 +6,6 @@
     padding-bottom: 30px;
 }
 
-
 .page-content {
     margin-top: 10px;
 }
@@ -20,12 +19,21 @@
     margin-right: auto; /* Center the text horizontally */
 }
 
-.resume-pdf {
+.resume-pdf-wrapper {
+    position: relative;
     display: block;
     margin-left: auto; /* Center the pdf horizontally */
     margin-right: auto; /* Center the pdf horizontally */
     max-width: 100%; /* Set maximum width to 100% */
-    width: 70%; /* Set width to 80% of the container */
-    height: auto; /* Set height to 800px */
+    width: 70%; /* Set width to 70% of the container */
+    padding-top: 77%; /* Set padding-top to maintain the aspect ratio of 8.5x11 */
+    overflow: hidden; /* Hide anything outside the container */
 }
 
+.resume-pdf {
+    position: absolute; /* Absolute positioning within the wrapper */
+    top: 0;
+    left: 0;
+    width: 100%; /* Fill the container */
+    height: 100%; /* Fill the container */
+}
