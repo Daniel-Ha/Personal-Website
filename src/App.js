@@ -39,10 +39,11 @@ function App() {
         <div className="main-content">
           {/* Routing logic */}
           <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/resume" element={<Resume />} />
-          </Routes>
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/*" element={<About />} />
+      </Routes>
+
         </div>
       </div>
     </Router>
