@@ -7,10 +7,17 @@ function Resume() {
       <h1 className='intro-text'>My Resume:</h1>
       <hr className="white-divider-r" />
       <div className="resume-pdf-wrapper">
-        <embed className='resume-pdf'
-          src={`${process.env.PUBLIC_URL}/Daniel_Ha_Resume.pdf`} 
-          type="application/pdf" 
-        />
+        <object 
+          className='resume-pdf'
+          data={`${process.env.PUBLIC_URL}/Daniel_Ha_Resume.pdf`} 
+          type="application/pdf"
+        >
+          <embed 
+            src={`${process.env.PUBLIC_URL}/Daniel_Ha_Resume.pdf`} 
+            type="application/pdf"
+          />
+          <p>It appears your web browser doesn't support iframes.</p>
+        </object>
       </div>
     </div>
   );
