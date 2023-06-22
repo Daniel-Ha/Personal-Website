@@ -26,8 +26,13 @@
     margin-right: auto; /* Center the pdf horizontally */
     max-width: 100%; /* Set maximum width to 100% */
     width: 70%; /* Set width to 70% of the container */
-    padding-top: 129.4%; /* Set padding-top to maintain the aspect ratio of 8.5x11 */
     overflow: hidden; /* Hide anything outside the container */
+}
+
+.resume-pdf-wrapper::before {
+    content: "";
+    display: block;
+    padding-top: 129.4%; /* This gives you an aspect ratio of 8.5:11 (height:width) */
 }
 
 .resume-pdf {
