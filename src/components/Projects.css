@@ -11,12 +11,12 @@
 }
 
 .intro-text {
-    margin-top: 90px;
     color: white;
     max-width: 80%; /* Set maximum width to 80% of the window width */
     font-size: 20px;
     margin-left: auto; /* Center the text horizontally */
     margin-right: auto; /* Center the text horizontally */
+    padding-top: 50px;
 }
 
 
