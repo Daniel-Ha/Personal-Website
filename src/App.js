@@ -14,20 +14,20 @@ function App() {
         <nav className="navbar navbar-expand-md navbar-light">
           <div className="container-fluid navbar-container">
             {/* My name */}
-            <NavLink className="navbar-brand" to="/" activeClassName="nav-link-active">Daniel Ha</NavLink>
+            <NavLink className="navbar-brand" to="/Personal-Website/" activeClassName="nav-link-active">Daniel Ha</NavLink>
 
             {/* Navbar menu */}
             <div className="ms-auto navbar-scroll">
               <div className="navbar-scrollable">
                 <ul className="navbar-nav">
                   <li className="nav-item nav-item-space">
-                    <NavLink className="nav-link" to="/" activeClassName="nav-link-active">About</NavLink>
+                    <NavLink className="nav-link" to="/Personal-Website/" activeClassName="nav-link-active">About</NavLink>
                   </li>
                   <li className="nav-item nav-item-space">
-                    <NavLink className="nav-link" to="/projects" activeClassName="nav-link-active">Projects</NavLink>
+                    <NavLink className="nav-link" to="/Personal-Website/projects" activeClassName="nav-link-active">Projects</NavLink>
                   </li>
                   <li className="nav-item nav-item-space">
-                    <NavLink className="nav-link" to="/resume" activeClassName="nav-link-active">Resume</NavLink>
+                    <NavLink className="nav-link" to="/Personal-Website/resume" activeClassName="nav-link-active">Resume</NavLink>
                   </li>
                 </ul>
               </div>
@@ -39,11 +39,10 @@ function App() {
         <div className="main-content">
           {/* Routing logic */}
           <Routes>
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/*" element={<About />} />
-      </Routes>
-
+            <Route path="/Personal-Website/projects" element={<Projects />} />
+            <Route path="/Personal-Website/resume" element={<Resume />} />
+            <Route path="/Personal-Website/*" element={<About />} />
+          </Routes>
         </div>
       </div>
     </Router>
