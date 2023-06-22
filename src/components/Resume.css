@@ -11,6 +11,7 @@
 }
 
 .intro-text {
+    margin-top: 10px;
     color: white;
     max-width: 80%; /* Set maximum width to 80% of the window width */
     font-size: 20px;
