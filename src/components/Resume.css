@@ -1,0 +1,31 @@
+.white-divider-r {
+    border-top: 1px solid white;
+    max-width: 15%; /* Set maximum width to 80% of the window width */
+    margin-left: auto; /* Center the text horizontally */
+    margin-right: auto; /* Center the text horizontally */
+    padding-bottom: 30px;
+}
+
+
+.page-content {
+    margin-top: 10px;
+}
+
+.intro-text {
+    margin-top: 50px;
+    color: white;
+    max-width: 80%; /* Set maximum width to 80% of the window width */
+    font-size: 20px;
+    margin-left: auto; /* Center the text horizontally */
+    margin-right: auto; /* Center the text horizontally */
+}
+
+.resume-pdf {
+    display: block;
+    margin-left: auto; /* Center the pdf horizontally */
+    margin-right: auto; /* Center the pdf horizontally */
+    max-width: 100%; /* Set maximum width to 100% */
+    width: 70%; /* Set width to 80% of the container */
+    height: 800px; /* Set height to 800px */
+}
+

@@ -1,0 +1,24 @@
+.image-container {
+    padding-top: 15px; /* Adjust the padding value to your preference */
+  }
+  
+  .custom-image {
+    width: 400px; /* Adjust the width to your preference */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  }
+  
+  .page-content {
+    margin-top: 10px; /* Adjust the value to match the height of your navbar */
+    height: calc(100vh - 80px); /* Subtract the navbar height from the viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling for the content */
+  }
+  
+  .personal-text{
+    margin-top: 15px;
+    color: white;
+  }
+
+  .personal-text-content{
+    color: white;
+    text-align: left;
+  }

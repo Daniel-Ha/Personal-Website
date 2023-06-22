@@ -1,38 +1,83 @@
+
+/*Align everything to center*/
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Set background color*/
+body {
+  background-color: #19252e; /* Dark navy*/
+  padding-top: 60px; /* Adjust this to the height of your navbar */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*navbar settings*/
+.navbar {
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Ensure it spans the entire width */
+  background-color: #19252e; /* Set the background color */
+  z-index: 1000; /* Ensure it sits on top */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-container {
+  max-width: 1000px; /*make navbar items more central to window*/
+  padding-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Display of my name */
+.navbar-brand{
+  color: #ffffff; /*text color: white*/
+  font-weight: 650; /*text boldness*/
+  font-size: 30px; /*text size*/
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-brand:focus {
+  color: #ffffff; /*overwrite Bootstrap defaults*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*the thing holding the nav-items*/
+.navbar-nav {
+  flex-direction: row;
+  white-space: nowrap; /*keep in row form*/
+  padding-right: 10px;
 }
+
+/*nav-items ("About", "Projects", "Resume", and "Contact me!")*/
+.nav-item-space {
+  /*spacing for nav-items*/
+  margin-right: 20px;
+  width: 95px;
+}
+/*aesthetic settings for nav-items options*/
+.nav-link{
+  color: #ffffff;
+  white-space: nowrap; /*make text not turn into two lines*/
+  font-size: 20px;
+}
+.nav-link:hover{
+  color: #bcbcbc;/*make nav-links interactable by hover*/
+}
+
+/*underline active nav-link by overriding Bootstrap defaults*/
+.nav-link.active {
+  text-decoration: underline !important;
+  color: white !important;
+}
+.nav-link.active:hover {
+  color: #bcbcbc !important;
+}
+
+
+/*makes the navbar scrollable*/
+.navbar-scroll {
+  overflow-x: auto;
+  white-space: nowrap; 
+}
+.navbar-scrollable {
+  display: inline-block;
+}
+

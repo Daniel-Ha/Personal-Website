@@ -1,0 +1,85 @@
+.page-content {
+    margin-top: 10px;
+}
+
+
+.projtitle-text,
+.desc-text {
+    margin-top: 15px;
+    color: white;
+    text-align: left;
+}
+
+.intro-text {
+    margin-top: 50px;
+    color: white;
+    max-width: 80%; /* Set maximum width to 80% of the window width */
+    font-size: 20px;
+    margin-left: auto; /* Center the text horizontally */
+    margin-right: auto; /* Center the text horizontally */
+}
+
+
+.project-container {
+    padding: 5px 15px 20px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Force single line */
+}
+
+.video-responsive {
+    padding-top: 15px;
+    flex-basis: 50%; /* Adjust the video and text containers to share space */
+    position: relative;
+    overflow: hidden;
+    max-width: 400px; /* Set the maximum width of the video to 400px */
+    height: 315px; /* Set to intrinsic height of the video */
+}
+
+.desc-text {
+    flex-basis: 70%; /* Adjust the video and text containers to share space */
+    overflow-y: auto; /* Add this to make it vertically scrollable */
+    padding-left: 10px;
+    height: 150px; /* Set to match the height of video-responsive */
+}
+
+.desc-text p:first-child {
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    /* Assuming 800px is the point where description gets less than 400px */
+    .project-container {
+        flex-direction: column;
+        height: auto; /* On small screens, let the height be automatic */
+    }
+
+    .video-responsive {
+        flex-basis: auto;
+        width: 100%; /* Full width for smaller screens */
+        max-width: 300px; /* Adjust the maximum width for smaller screens */
+        height: auto; /* On small screens, let the height be automatic */
+    }
+
+    .desc-text {
+        height: auto; /* Reset the height on smaller screens */
+        padding-left: 0px;
+    }
+    .intro-text {
+        margin-top: 80px;
+        color: white;
+        max-width: 80%; /* Set maximum width to 80% of the window width */
+        font-size: 20px;
+        margin-left: auto; /* Center the text horizontally */
+        margin-right: auto; /* Center the text horizontally */
+    }
+    
+}
+
+.white-divider {
+    border-top: 1px solid white;
+    max-width: 86%; /* Set maximum width to 80% of the window width */
+    margin-left: auto; /* Center the text horizontally */
+    margin-right: auto; /* Center the text horizontally */
+}
+
