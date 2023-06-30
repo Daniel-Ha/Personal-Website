@@ -17,7 +17,7 @@ const About = () => {
           I am a recent graduate of Dartmouth College where I received a BA in Cognitive Science with a focus in Intelligence. I am interested in all things related to cognition and am fascinated by how new technologies are seemingly able to replicate intelligent and intentioned behavior!
         </p>
         <p className="personal-text-content">
-          Within the field of computer science, I am most passionate about machine learning and artificial intelligence.
+          Within the field of computer science, I am most passionate about artificial intelligence, specifically machine learning.
         </p>
         <p className="personal-text-content">
           In my freetime, I enjoy playing the guitar, speedcubing (solving the Rubik's cube as fast as possible), and playing tennis.
